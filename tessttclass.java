@@ -36,5 +36,15 @@ public class tessttclass {
         Assert.assertEquals("fizz", numberr);
     }
 
+    @Test
+    public void testbuzz()
+    {
+        int number  = 10;
+        String string = fizzbuzz.play(number);
+        Assert.assertEquals("buzz", string);
+    }
+
+    
+
 
 }
