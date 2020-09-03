@@ -27,9 +27,13 @@ public class tessttclass {
         Assert.assertEquals("fizz", numberr);
     }
 
+    @Test
     public void testdivisibleby3()
     {
         int number = 6;
+        String numberr = fizzbuzz.play(number);
+
+        Assert.assertEquals("fizz", numberr);
     }
 
 
