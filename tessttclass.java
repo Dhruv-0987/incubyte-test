@@ -54,16 +54,16 @@ public class tessttclass<i> {
    }
 
    @Test
-    public void divisibleBy5And3()
+    public void divisibleBy_5_And_3()
    {
        int number = 15;
        String string = fizzbuzz.play(number);
        Assert.assertEquals("fizzbuzz", string);
    }
 
-
+   // stage 2 tests
    @Test
-    public void number_is_fizz_divisibleBy3_or_has3init()
+    public void number_is_fizz_divisibleBy_3_or_has_3_init()
    {
        int number = 38;
        String string  = fizzbuzz.playstage2(number);
@@ -72,11 +72,20 @@ public class tessttclass<i> {
    }
 
    @Test
-   public void number_is_buzz_divisibleBy5_or_has5init()
+   public void number_is_buzz_divisibleBy_5_or_has_5_init()
    {
-       int number = 28;
+       int number = 58;
        String string  = fizzbuzz.playstage2(number);
 
-       Assert.assertEquals("28", string);
+       Assert.assertEquals("buzz", string);
    }
+
+   @Test
+    public void number_is_not_divisibleByBoth_andnotcontains_5_Or_3()
+   {
+       int number = 28;
+       String s = fizzbuzz.playstage2(number);
+       Assert.assertEquals("28", s);
+   }
+
 }
