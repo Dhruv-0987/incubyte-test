@@ -62,4 +62,21 @@ public class tessttclass<i> {
    }
 
 
+   @Test
+    public void number_is_fizz_divisibleBy3_or_has3init()
+   {
+       int number = 38;
+       String string  = fizzbuzz.playstage2(number);
+
+       Assert.assertEquals("fizz", string);
+   }
+
+   @Test
+   public void number_is_buzz_divisibleBy5_or_has5init()
+   {
+       int number = 28;
+       String string  = fizzbuzz.playstage2(number);
+
+       Assert.assertEquals("28", string);
+   }
 }
